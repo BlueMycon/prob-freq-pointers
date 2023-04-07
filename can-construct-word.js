@@ -20,10 +20,8 @@ function canConstructWord(word, letters) {
     if(!(key in freqLetters)){
       return false;
     }
-    if(freqLetters[key] !== undefined){
-      if (freqLetters[key] < freqWord[key]) {
-        return false;
-      }
+    if (freqLetters[key] < freqWord[key]) {
+      return false;
     }
   }
   return true;
