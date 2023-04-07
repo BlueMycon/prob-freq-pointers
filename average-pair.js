@@ -1,3 +1,4 @@
+"use strict";
 /**
  * accept an array of numbers, nums, and a numeric targetAvg.
  * Determine if there is a pair of numbers in nums where
@@ -9,7 +10,7 @@
  */
 function averagePair(nums, targetAvg) {
   if (nums.length === 0) return false;
-  
+
   let left = 0;
   let right = nums.length - 1;
 
